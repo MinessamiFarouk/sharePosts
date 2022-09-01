@@ -154,9 +154,9 @@
         }
 
         public function logout() {
-            unset($_SESSIOn["user_id"]);
-            unset($_SESSIOn["email"]);
-            unset($_SESSIOn["name"]);
+            unset($_SESSION["user_id"]);
+            unset($_SESSION["user_email"]);
+            unset($_SESSION["user_name"]);
             session_destroy();
             redirecte("users/login");
         }
