@@ -9,7 +9,7 @@
     <?php if($data['post']->user_id == $_SESSION['user_id']) : ?>
         <hr>
         <a href="<?php echo URL_ROOT ?>/posts/edit/<?php echo $data["post"]->id; ?>" class="btn btn-dark">Edit</a>
-        <form action="<?php echo URL_ROOT; ?>/posts/delete/<?php echo $data['post']->id ?>" method="post" class="float-end">
+        <form action="<?php echo URL_ROOT; ?>/posts/delete/<?php echo $data['post']->id ?>" method="POST" class="float-end">
             <input type="submit" value="Delete" class="btn btn-danger">
         </form>
     <?php endif; ?>

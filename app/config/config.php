@@ -9,7 +9,7 @@
     define("APP_ROOT", dirname(dirname(__FILE__)));
 
     //URL_ROOT
-    define("URL_ROOT", "http://localhost/sharePosts/");
+    define("URL_ROOT", "http://localhost/sharePosts");
 
     //SITE_NAME
     define("SITE_NAME", "sharePosts");

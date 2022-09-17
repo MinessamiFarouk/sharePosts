@@ -11,7 +11,7 @@
           <a class="nav-link" aria-current="page" href="<?php echo URL_ROOT; ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo URL_ROOT; ?>pages/about">About</a>
+          <a class="nav-link" href="<?php echo URL_ROOT; ?>/pages/about">About</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
@@ -20,14 +20,14 @@
             <a class="nav-link" aria-current="page" href="#">Welcom "<?php echo $_SESSION["user_name"]; ?>"</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?php echo URL_ROOT; ?>users/logout">Logout</a>
+            <a class="nav-link" aria-current="page" href="<?php echo URL_ROOT; ?>/users/logout">Logout</a>
           </li>
         <?php else: ?>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?php echo URL_ROOT; ?>users/register">Register</a>
+            <a class="nav-link" aria-current="page" href="<?php echo URL_ROOT; ?>/users/register">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URL_ROOT; ?>users/login">Login</a>
+            <a class="nav-link" href="<?php echo URL_ROOT; ?>/users/login">Login</a>
           </li>
         <?php endif; ?>
       </ul>

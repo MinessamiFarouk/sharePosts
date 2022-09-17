@@ -4,7 +4,7 @@
             <div class="card card-body bg-light mt-5">
                 <h2>Create An Account</h2>
                 <p>Please fill out this from to register with us.</p>
-                <form action="<?php echo URL_ROOT; ?>users/register" method="Post">
+                <form action="<?php echo URL_ROOT; ?>/users/register" method="Post">
                     <div class="form-group">
                         <label for="name">Name : <sup>*</sup></label>
                         <input type="text" name="name" class="form-control form-control-lg <?php echo (!empty($data['name_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['name']; ?>">
@@ -31,7 +31,7 @@
                             <input type="submit" value="Register" class="btn btn-success btn-block">
                         </div>
                         <div class="col">
-                            <a href="<?php echo URL_ROOT; ?>users/login" class="btn btn-light btn-block">Have an Account? Login</a>
+                            <a href="<?php echo URL_ROOT; ?>/users/login" class="btn btn-light btn-block">Have an Account? Login</a>
                         </div>
                     </div>
                 </form>

@@ -124,7 +124,7 @@
         }
 
         public function delete($id) {
-             if($_SERVER["REQUEST_METHOD" == "POST"]) {
+             if($_SERVER["REQUEST_METHOD"] == "POST") {
                 //check if i'm the owner
                 $post = $this->postModel->getPostById($id);
                     
@@ -135,11 +135,11 @@
                 if($this->postModel->deletePost($id)){
                     flash('post_message', 'The Post DELETED.');
                     redirecte("posts");
-
+                    
                 }else {
                     die("someThing Goes Wrong");
                 }
-             }else{
+            }else{
                 redirecte("posts");
              }
         }
